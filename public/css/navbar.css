@@ -1,0 +1,220 @@
+/*=========================================
+            NAVBAR
+=========================================*/
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    transition:.4s ease;
+}
+
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    transition:.4s ease;
+    animation:fadeDown .8s ease;
+}
+
+/*=========================================
+            SCROLL NAVBAR
+=========================================*/
+
+header.sticky{
+    background:rgba(255,255,255,.92);
+    backdrop-filter:blur(18px);
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/*=========================================
+                LOGO
+=========================================*/
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:30px;
+    font-weight:700;
+    color:#ffffff;
+    font-family:'Playfair Display',serif;
+    text-decoration:none;
+    text-shadow:0 2px 8px rgba(0,0,0,.5);
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    object-fit:contain;
+    background:#ffffff;
+    border-radius:50%;
+    padding:5px;
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+    transition:.4s;
+}
+
+.logo:hover img{
+    transform:rotate(-15deg) scale(1.08);
+}
+
+header.sticky .logo{
+    color:var(--dark);
+    text-shadow:none;
+}
+
+header.sticky .logo img{
+    background:transparent;
+    padding:0;
+    box-shadow:none;
+}
+
+/*=========================================
+            NAV LINKS
+=========================================*/
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    list-style:none;
+}
+
+.nav-links li{
+    position:relative;
+}
+
+.nav-links a{
+    color:#ffffff;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:500;
+    transition:.3s;
+    position:relative;
+}
+
+header.sticky .nav-links a{
+    color:var(--dark);
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0;
+    height:3px;
+    border-radius:10px;
+    background:var(--accent);
+    transition:.4s;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+    width:100%;
+}
+
+.nav-links a:hover{
+    color:var(--accent);
+}
+
+/*=========================================
+            RIGHT SIDE
+=========================================*/
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+/*=========================================
+            LOGIN BUTTON
+=========================================*/
+
+.login-btn{
+    padding:12px 28px;
+    border-radius:50px;
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(13,110,253,.25);
+}
+
+.login-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px rgba(13,110,253,.35);
+}
+
+/*=========================================
+            MENU BUTTON
+=========================================*/
+
+.menu-btn{
+    display:none;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#ffffff;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.menu-btn i{
+    font-size:22px;
+    color:var(--dark);
+}
+
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+@media(max-width:991px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu-btn{
+        display:flex;
+    }
+
+    .logo{
+        font-size:24px;
+    }
+
+    .logo img{
+        width:45px;
+        height:45px;
+    }
+
+    .login-btn{
+        display:none;
+    }
+}
+
+/*=========================================
+            ANIMATION
+=========================================*/
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}

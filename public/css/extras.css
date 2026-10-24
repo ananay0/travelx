@@ -1,0 +1,267 @@
+/*=========================================
+  EXTRAS.CSS
+  Styles for the parts added when the website got its backend:
+  form messages, toasts, navbar user name, price estimate, "My Bookings"
+=========================================*/
+
+/* make the HTML "hidden" attribute always win */
+[hidden]{
+    display:none !important;
+}
+
+
+/*=========================================
+  WARNING WHEN OPENED WITHOUT THE SERVER
+=========================================*/
+.file-warning{
+    position:relative;
+    z-index:5000;
+    background:#fff3cd;
+    color:#664d03;
+    border-bottom:2px solid #ffda6a;
+    padding:12px 5%;
+    font-size:14px;
+    text-align:center;
+}
+.file-warning code{
+    background:rgba(0,0,0,.08);
+    padding:2px 6px;
+    border-radius:5px;
+}
+
+
+/*=========================================
+  FORM MESSAGE BOX
+=========================================*/
+.form-alert{
+    padding:14px 18px;
+    border-radius:12px;
+    font-size:14.5px;
+    font-weight:500;
+    margin-bottom:22px;
+    border:1px solid transparent;
+    grid-column:1 / -1;
+}
+.form-alert.error{
+    background:#fdecea;
+    color:#b42318;
+    border-color:#f5c2c0;
+}
+.form-alert.success{
+    background:#e7f7ee;
+    color:#116b3a;
+    border-color:#b7e4c7;
+}
+
+
+/*=========================================
+  FIELD ERRORS
+=========================================*/
+.field-error{
+    display:block;
+    color:#d92d20;
+    font-size:13px;
+    font-weight:500;
+    margin-top:2px;
+    line-height:1.4;
+}
+.has-error{
+    border-color:#d92d20 !important;
+    box-shadow:0 0 0 3px rgba(217,45,32,.12) !important;
+}
+/* login/register inputs sit inside .input-icon, so colour that box */
+.input-icon:has(.has-error){
+    border-color:#d92d20 !important;
+}
+
+
+/*=========================================
+  NAVBAR: logged-in user
+=========================================*/
+.nav-user{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-weight:600;
+    font-size:15px;
+    color:#fff;
+    margin-right:6px;
+    white-space:nowrap;
+}
+header.sticky .nav-user{
+    color:var(--dark);
+}
+.nav-user i{
+    color:var(--accent);
+    font-size:20px;
+}
+@media(max-width:576px){
+    .nav-user{
+        display:none;
+    }
+}
+
+
+/*=========================================
+  TOAST (small message at bottom)
+=========================================*/
+.toast{
+    position:fixed;
+    left:50%;
+    bottom:30px;
+    transform:translate(-50%,30px);
+    background:var(--dark);
+    color:#fff;
+    padding:14px 24px;
+    border-radius:50px;
+    font-size:14.5px;
+    box-shadow:0 12px 30px rgba(0,0,0,.28);
+    opacity:0;
+    transition:.4s;
+    z-index:9999;
+    max-width:90vw;
+    text-align:center;
+}
+.toast.show{
+    opacity:1;
+    transform:translate(-50%,0);
+}
+
+
+/*=========================================
+  BOOKING: PRICE ESTIMATE
+=========================================*/
+.price-estimate{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    background:linear-gradient(135deg,rgba(13,110,253,.08),rgba(0,180,216,.1));
+    border:1px dashed var(--primary);
+    border-radius:15px;
+    padding:16px 20px;
+    margin-bottom:10px;
+}
+.price-estimate strong{
+    font-size:20px;
+    color:var(--primary);
+}
+.price-estimate span{
+    color:var(--text);
+    font-size:14px;
+}
+.price-estimate small{
+    color:var(--gray);
+    font-size:12.5px;
+}
+
+.popup-ref{
+    margin-top:6px;
+    line-height:1.7;
+}
+
+
+/*=========================================
+  BOOKING: MY BOOKINGS
+=========================================*/
+.my-bookings{
+    background:var(--section);
+    padding:80px 8%;
+}
+.my-bookings-list{
+    max-width:900px;
+    margin:40px auto 0;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+.booking-record{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    background:#fff;
+    border-radius:18px;
+    padding:22px 26px;
+    box-shadow:var(--shadow);
+    border-left:6px solid var(--accent);
+}
+.booking-record.status-confirmed{ border-left-color:#16a34a; }
+.booking-record.status-cancelled{ border-left-color:#9ca3af; opacity:.7; }
+.record-main h4{
+    font-size:19px;
+    color:var(--dark);
+    margin-bottom:4px;
+}
+.record-main p{
+    color:var(--text);
+    font-size:14.5px;
+}
+.record-main small{
+    color:var(--gray);
+}
+.record-side{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:8px;
+    text-align:right;
+}
+.record-side strong{
+    font-size:19px;
+    color:var(--primary);
+}
+.status-pill{
+    text-transform:capitalize;
+    font-size:12.5px;
+    font-weight:600;
+    padding:4px 14px;
+    border-radius:50px;
+    background:#fff3cd;
+    color:#8a6100;
+}
+.status-confirmed .status-pill{ background:#dcfce7; color:#166534; }
+.status-cancelled .status-pill{ background:#e5e7eb; color:#4b5563; }
+.cancel-booking{
+    border:1px solid #f1b5b0;
+    color:#b42318;
+    background:#fff;
+    padding:6px 16px;
+    border-radius:50px;
+    font-size:13px;
+    cursor:pointer;
+    transition:.3s;
+}
+.cancel-booking:hover{
+    background:#b42318;
+    color:#fff;
+}
+.cancel-booking:disabled{
+    opacity:.5;
+    cursor:not-allowed;
+}
+.no-bookings{
+    text-align:center;
+    color:var(--gray);
+}
+@media(max-width:576px){
+    .my-bookings{ padding:60px 5%; }
+    .booking-record{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+    .record-side{
+        align-items:flex-start;
+        text-align:left;
+    }
+}
+
+
+/*=========================================
+  DESTINATIONS: NO RESULT MESSAGE
+=========================================*/
+.no-result{
+    text-align:center;
+    color:var(--gray);
+    font-size:18px;
+    padding:30px 0 0;
+}

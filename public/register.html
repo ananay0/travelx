@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Register | TravelX</title>
+
+
+<link rel="icon" href="images/logo.png">
+
+
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/register.css">
+
+
+<link rel="stylesheet" href="css/extras.css">
+
+</head>
+
+
+
+<body>
+
+
+
+
+<!--============== REGISTER PAGE ==============-->
+
+
+
+<section class="register-page">
+
+
+
+<div class="register-image">
+
+
+<div class="register-overlay"></div>
+
+
+
+<div class="register-text">
+
+
+<i class="fa-solid fa-earth-americas"></i>
+
+
+<h1>
+
+TravelX
+
+</h1>
+
+
+<p>
+
+Create your account and start exploring the world.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="register-container">
+
+
+
+<div class="register-box">
+
+
+
+<a href="index.html" class="register-logo">
+
+
+<img src="images/logo.png" alt="logo">
+
+
+<span>
+
+TravelX
+
+</span>
+
+
+</a>
+
+
+
+
+
+<h2>
+
+Create Account
+
+</h2>
+
+
+<p>
+
+Join TravelX and plan amazing journeys
+
+</p>
+
+
+
+
+
+
+<form id="registerForm" novalidate>
+
+<div class="form-alert" id="registerAlert" role="alert" hidden></div>
+
+
+
+
+
+
+<div class="register-input">
+
+
+<label>
+
+Full Name
+
+</label>
+
+
+
+<div class="input-icon">
+
+
+<i class="fa-solid fa-user"></i>
+
+
+
+<input
+
+type="text"
+
+id="registerName"
+
+placeholder="Enter your name"
+
+required>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="register-input">
+
+
+<label>
+
+Email Address
+
+</label>
+
+
+
+<div class="input-icon">
+
+
+<i class="fa-solid fa-envelope"></i>
+
+
+
+<input
+
+type="email"
+
+id="registerEmail"
+
+placeholder="Enter your email"
+
+required>
+
+
+
+</div>
+
+
+</div>
+<!--============== PASSWORD FIELD ==============-->
+
+
+<div class="register-input">
+
+
+<label>
+
+Password
+
+</label>
+
+
+
+<div class="input-icon">
+
+
+<i class="fa-solid fa-lock"></i>
+
+
+
+<input
+
+type="password"
+
+id="registerPassword"
+
+placeholder="Create password"
+
+required>
+
+
+
+<span class="show-register-password">
+
+
+<i class="fa-solid fa-eye"></i>
+
+
+</span>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="register-input">
+
+
+<label>
+
+Confirm Password
+
+</label>
+
+
+
+<div class="input-icon">
+
+
+<i class="fa-solid fa-shield-halved"></i>
+
+
+
+<input
+
+type="password"
+
+id="confirmPassword"
+
+placeholder="Confirm password"
+
+required>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<!-- TERMS -->
+
+
+<div class="terms-box">
+
+
+<label>
+
+
+<input type="checkbox" id="termsCheck" required>
+
+
+
+I agree to the Terms & Conditions
+
+
+</label>
+
+
+
+</div>
+
+
+
+
+
+<!-- REGISTER BUTTON -->
+
+
+<button type="submit" class="register-btn-submit">
+
+
+<i class="fa-solid fa-user-plus"></i>
+
+
+Create Account
+
+
+</button>
+
+
+
+
+
+
+<!-- LOGIN LINK -->
+
+
+<div class="login-link">
+
+
+<p>
+
+Already have an account?
+
+<a href="login.html">
+
+Login Here
+
+</a>
+
+
+</p>
+
+
+</div>
+
+
+
+
+
+</form>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<!--============== REGISTER POPUP ==============-->
+
+
+
+<div class="register-popup">
+
+
+<div class="register-popup-box">
+
+
+<i class="fa-solid fa-circle-check"></i>
+
+
+<h2>
+
+Account Created!
+
+</h2>
+
+
+
+<p>
+
+Your account has been created successfully.
+
+</p>
+
+
+
+
+<button class="close-register-popup">
+
+Continue
+
+</button>
+
+
+
+</div>
+
+
+</div>
+<!--============== FOOTER ==============-->
+
+
+<footer>
+
+
+<div class="footer-container">
+
+
+
+<div class="footer-box">
+
+
+<h2>
+
+TravelX
+
+</h2>
+
+
+
+<p>
+
+Your trusted travel partner for unforgettable journeys
+around the world.
+
+</p>
+
+
+
+<div class="social-icons">
+
+
+<a href="#">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fab fa-x-twitter"></i>
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fab fa-youtube"></i>
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-box">
+
+
+<h3>
+
+Quick Links
+
+</h3>
+
+
+<a href="index.html">
+
+Home
+
+</a>
+
+
+<a href="about.html">
+
+About
+
+</a>
+
+
+<a href="destinations.html">
+
+Destinations
+
+</a>
+
+
+<a href="packages.html">
+
+Packages
+
+</a>
+
+
+<a href="contact.html">
+
+Contact
+
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="footer-box">
+
+
+<h3>
+
+Services
+
+</h3>
+
+
+<a href="booking.html">
+
+Tour Booking
+
+</a>
+
+
+<a href="#">
+
+Flight Booking
+
+</a>
+
+
+<a href="#">
+
+Hotel Booking
+
+</a>
+
+
+<a href="#">
+
+Travel Guide
+
+</a>
+
+
+</div>
+
+
+
+
+
+<div class="footer-box">
+
+
+<h3>
+
+Contact
+
+</h3>
+
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+New Delhi, India
+
+</p>
+
+
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
++91 98765 43210
+
+</p>
+
+
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+info@travelx.com
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+
+© <span class="year"></span> TravelX. All Rights Reserved.
+
+</p>
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+
+
+<!--============== JAVASCRIPT ==============-->
+
+
+<script src="js/api.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/localstorage.js"></script>
+
+<script src="js/register.js"></script>
+
+
+
+</body>
+
+</html>

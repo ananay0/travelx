@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery | TravelX</title>
+
+<link rel="icon" href="images/logo.png">
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/gallery.css">
+
+<link rel="stylesheet" href="css/extras.css">
+
+</head>
+
+<body>
+
+<!--============== LOADER ==============-->
+
+<div class="loader">
+
+    <div class="loader-box">
+
+        <i class="fa-solid fa-plane"></i>
+
+        <h2>TravelX</h2>
+
+    </div>
+
+</div>
+
+<!--============== HEADER ==============-->
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<span>TravelX</span>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="destinations.html">Destinations</a></li>
+
+<li><a href="packages.html">Packages</a></li>
+
+<li><a href="gallery.html" class="active">Gallery</a></li>
+
+<li><a href="booking.html">Booking</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<a href="login.html" class="login-btn">
+
+Login
+
+</a>
+
+<div class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--============== GALLERY HERO ==============-->
+
+<section class="gallery-hero">
+
+<div class="gallery-overlay"></div>
+
+<div class="gallery-content">
+
+<p>Travel Memories</p>
+
+<h1>Explore Our Gallery</h1>
+
+<span>
+
+Home
+
+<i class="fa-solid fa-angle-right"></i>
+
+Gallery
+
+</span>
+
+</div>
+
+</section>
+
+<!--============== FILTER BUTTONS ==============-->
+
+<section class="gallery-filter">
+
+<button class="filter-btn active" data-filter="all">
+All
+</button>
+
+<button class="filter-btn" data-filter="nature">
+Nature
+</button>
+
+<button class="filter-btn" data-filter="beach">
+Beach
+</button>
+
+<button class="filter-btn" data-filter="city">
+City
+</button>
+
+<button class="filter-btn" data-filter="adventure">
+Adventure
+</button>
+
+</section>
+
+<!--============== GALLERY ==============-->
+
+<section class="gallery-page">
+
+<div class="section-title">
+
+<p>Our Photos</p>
+
+<h2>Captured Moments</h2>
+
+</div>
+
+<div class="gallery-grid">
+    <!-- IMAGE 1 -->
+
+<div class="gallery-item nature">
+
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+alt="Mountain"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Mountain View</h3>
+
+<button class="fav-gallery" data-image="Mountain">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 2 -->
+
+<div class="gallery-item beach">
+
+<img
+src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+alt="Beach"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Beach Paradise</h3>
+
+<button class="fav-gallery" data-image="Beach">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 3 -->
+
+<div class="gallery-item adventure">
+
+<img
+src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+alt="Adventure"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Adventure Trip</h3>
+
+<button class="fav-gallery" data-image="Adventure">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 4 -->
+
+<div class="gallery-item city">
+
+<img
+src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=900&q=80"
+alt="City"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>City Lights</h3>
+
+<button class="fav-gallery" data-image="City">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 5 -->
+
+<div class="gallery-item beach">
+
+<img
+src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=80"
+alt="Island"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Island Escape</h3>
+
+<button class="fav-gallery" data-image="Island">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 6 -->
+
+<div class="gallery-item nature">
+
+<img
+src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=900&q=80"
+alt="Waterfall"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Waterfall Beauty</h3>
+
+<button class="fav-gallery" data-image="Waterfall">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+<!-- IMAGE 7 -->
+
+<div class="gallery-item adventure">
+
+<img
+src="https://images.unsplash.com/photo-1478827536114-da961b7f1e4d?auto=format&fit=crop&w=900&q=80"
+alt="Camping"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Camping Adventure</h3>
+
+<button class="fav-gallery" data-image="Camping">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 8 -->
+
+<div class="gallery-item city">
+
+<img
+src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=900&q=80"
+alt="Paris"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Paris Streets</h3>
+
+<button class="fav-gallery" data-image="Paris">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 9 -->
+
+<div class="gallery-item nature">
+
+<img
+src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=80"
+alt="Forest"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Green Forest</h3>
+
+<button class="fav-gallery" data-image="Forest">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 10 -->
+
+<div class="gallery-item beach">
+
+<img
+src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+alt="Sunset"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Sunset View</h3>
+
+<button class="fav-gallery" data-image="Sunset">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 11 -->
+
+<div class="gallery-item adventure">
+
+<img
+src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=80"
+alt="Hiking"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Mountain Hiking</h3>
+
+<button class="fav-gallery" data-image="Hiking">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- IMAGE 12 -->
+
+<div class="gallery-item city">
+
+<img
+src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+alt="Dubai"
+class="gallery-img">
+
+<div class="gallery-overlay-box">
+
+<h3>Dubai Night View</h3>
+
+<button class="fav-gallery" data-image="Dubai">
+
+<i class="fa-regular fa-heart"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--============== LIGHTBOX ==============-->
+
+<div class="lightbox">
+
+    <span class="close-lightbox">
+        <i class="fa-solid fa-xmark"></i>
+    </span>
+
+    <img src="" alt="Preview" class="lightbox-img">
+
+</div>
+
+
+
+<!--============== NEWSLETTER ==============-->
+
+<section class="newsletter">
+
+    <div class="newsletter-content">
+
+        <h2>Create Your Own Travel Story</h2>
+
+        <p>
+            Explore amazing places and capture unforgettable memories with TravelX.
+        </p>
+
+        <a href="booking.html" class="btn primary-btn">
+            Start Your Journey
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!--============== FOOTER ==============-->
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-box">
+
+<h2>TravelX</h2>
+
+<p>
+Explore the world with TravelX. Discover beautiful places,
+create memories and enjoy unforgettable journeys.
+</p>
+
+<div class="social-icons">
+
+<a href="#">
+<i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-x-twitter"></i>
+</a>
+
+<a href="#">
+<i class="fab fa-youtube"></i>
+</a>
+
+</div>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="destinations.html">Destinations</a>
+
+<a href="packages.html">Packages</a>
+
+<a href="gallery.html">Gallery</a>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>Services</h3>
+
+<a href="booking.html">Book Tour</a>
+
+<a href="#">Flight Booking</a>
+
+<a href="#">Hotel Reservation</a>
+
+<a href="#">Travel Guide</a>
+
+<a href="contact.html">Support</a>
+
+</div>
+
+
+
+<div class="footer-box">
+
+<h3>Contact Info</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+New Delhi, India
+</p>
+
+<p>
+<i class="fa-solid fa-phone"></i>
++91 98765 43210
+</p>
+
+<p>
+<i class="fa-solid fa-envelope"></i>
+info@travelx.com
+</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+
+© <span class="year"></span> TravelX. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+<!--============== JAVASCRIPT ==============-->
+
+<script src="js/api.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/localstorage.js"></script>
+
+<script src="js/gallery.js"></script>
+
+</body>
+
+</html>

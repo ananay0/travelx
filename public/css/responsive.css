@@ -1,0 +1,305 @@
+/*=========================================
+        LARGE DEVICES
+=========================================*/
+
+@media (max-width:1200px){
+
+    .hero-content h1{
+
+        font-size:60px;
+
+    }
+
+}
+
+
+/*=========================================
+        LAPTOP
+=========================================*/
+
+@media (max-width:992px){
+
+    section{
+
+        padding:80px 6%;
+
+    }
+
+    .navbar{
+
+        padding:18px 6%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:52px;
+
+    }
+
+    .hero-content p{
+
+        font-size:17px;
+
+    }
+
+    .section-title h2{
+
+        font-size:36px;
+
+    }
+
+}
+
+
+/*=========================================
+        TABLET
+=========================================*/
+
+@media (max-width:768px){
+
+    .menu-btn{
+
+        display:flex;
+
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:80px;
+
+        right:-100%;
+
+        width:280px;
+
+        height:calc(100vh - 80px);
+
+        background:#fff;
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        align-items:flex-start;
+
+        padding:40px 30px;
+
+        gap:25px;
+
+        transition:.4s;
+
+        box-shadow:-10px 0 30px rgba(0,0,0,.08);
+
+    }
+
+    .nav-links.active{
+
+        right:0;
+
+    }
+
+    .nav-links a{
+
+        color:var(--dark);
+
+        font-size:18px;
+
+    }
+
+    .hero{
+
+        height:90vh;
+
+    }
+
+    .hero-content h1{
+
+        font-size:42px;
+
+    }
+
+    .hero-content p{
+
+        font-size:16px;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .hero-buttons .btn{
+
+        width:220px;
+
+        text-align:center;
+
+    }
+
+    .section-title h2{
+
+        font-size:32px;
+
+    }
+
+    .counter{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+
+/*=========================================
+        MOBILE
+=========================================*/
+
+@media (max-width:576px){
+
+    section{
+
+        padding:70px 5%;
+
+    }
+
+    .navbar{
+
+        padding:15px 5%;
+
+    }
+
+    .logo{
+
+        font-size:24px;
+
+    }
+
+    .logo img{
+
+        width:42px;
+
+    }
+
+    .login-btn{
+
+        display:none;
+
+    }
+
+    .hero{
+
+        height:100vh;
+
+    }
+
+    .hero-content h1{
+
+        font-size:34px;
+
+    }
+
+    .hero-content p{
+
+        font-size:15px;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:13px;
+
+        padding:10px 18px;
+
+    }
+
+    .section-title h2{
+
+        font-size:28px;
+
+    }
+
+    .destination-info h3{
+
+        font-size:24px;
+
+    }
+
+    .package-bottom{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        align-items:flex-start;
+
+    }
+
+    .counter{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .newsletter form{
+
+        flex-direction:column;
+
+    }
+
+    .newsletter button{
+
+        width:100%;
+
+    }
+
+}
+
+
+/*=========================================
+        SMALL MOBILE
+=========================================*/
+
+@media (max-width:400px){
+
+    .hero-content h1{
+
+        font-size:28px;
+
+    }
+
+    .hero-content p{
+
+        font-size:14px;
+
+    }
+
+    .section-title h2{
+
+        font-size:24px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+    }
+
+    .destination-card img{
+
+        height:280px;
+
+    }
+
+    .package-card img{
+
+        height:220px;
+
+    }
+
+}

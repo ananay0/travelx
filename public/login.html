@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Login | TravelX</title>
+
+
+<link rel="icon" href="images/logo.png">
+
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+
+
+<!-- Font Awesome -->
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/login.css">
+
+
+<link rel="stylesheet" href="css/extras.css">
+
+</head>
+
+
+<body>
+
+
+
+<!--============== LOGIN PAGE ==============-->
+
+
+<section class="login-page">
+
+
+
+<div class="login-image">
+
+
+<div class="login-overlay"></div>
+
+
+
+<div class="login-text">
+
+
+<i class="fa-solid fa-plane"></i>
+
+
+<h1>
+TravelX
+</h1>
+
+
+<p>
+Explore the world with unforgettable journeys.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="login-container">
+
+
+
+<div class="login-box">
+
+
+
+
+
+<a href="index.html" class="login-logo">
+
+
+<img src="images/logo.png" alt="logo">
+
+
+<span>
+TravelX
+</span>
+
+
+</a>
+
+
+
+
+
+
+<h2>
+Welcome Back
+</h2>
+
+
+<p>
+Login to continue your travel journey
+</p>
+
+
+
+
+
+
+
+<form id="loginForm" novalidate>
+
+<div class="form-alert" id="loginAlert" role="alert" hidden></div>
+
+
+
+
+
+
+<div class="login-input">
+
+
+<label>
+Email Address
+</label>
+
+
+
+<div class="input-icon">
+
+
+<i class="fa-solid fa-envelope"></i>
+
+
+
+<input
+
+type="email"
+
+id="loginEmail"
+
+placeholder="Enter your email"
+
+required>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="login-input">
+
+
+<label>
+Password
+</label>
+
+
+
+<div class="input-icon">
+
+
+<i class="fa-solid fa-lock"></i>
+
+
+
+<input
+
+type="password"
+
+id="loginPassword"
+
+placeholder="Enter password"
+
+required>
+
+
+<span class="show-password">
+
+<i class="fa-solid fa-eye"></i>
+
+</span>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="login-options">
+
+
+<label>
+
+
+<input type="checkbox" id="rememberMe">
+
+
+Remember me
+
+
+</label>
+
+
+
+
+<a href="#" id="forgotLink">
+Forgot Password?
+</a>
+
+
+
+</div>
+
+
+
+
+
+
+
+<button type="submit" class="login-btn-submit">
+
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+
+Login
+
+
+</button>
+
+
+
+
+
+</form>
+<!--============== REGISTER LINK ==============-->
+
+<div class="register-link">
+
+<p>
+
+Don't have an account?
+
+<a href="register.html">
+
+Create Account
+
+</a>
+
+</p>
+
+</div>
+
+
+
+
+
+<!--============== DIVIDER ==============-->
+
+<div class="login-divider">
+
+<span>
+
+OR
+
+</span>
+
+</div>
+
+
+
+
+
+<!--============== SOCIAL LOGIN ==============-->
+
+<div class="social-login">
+
+<button type="button" class="google-login">
+
+<i class="fa-brands fa-google"></i>
+
+Continue with Google
+
+</button>
+
+
+
+<button type="button" class="facebook-login">
+
+<i class="fa-brands fa-facebook-f"></i>
+
+Continue with Facebook
+
+</button>
+
+</div>
+
+
+
+
+
+<!--============== BACK HOME ==============-->
+
+<a href="index.html" class="back-home">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Back to Home
+
+</a>
+
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+
+<!--============== LOGIN SUCCESS POPUP ==============-->
+
+<div class="login-popup">
+
+<div class="login-popup-box">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>
+
+Login Successful
+
+</h2>
+
+<p>
+
+Welcome back to TravelX.
+
+</p>
+
+<button class="close-login-popup">
+
+Continue
+
+</button>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<!--============== JAVASCRIPT ==============-->
+
+<script src="js/api.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/localstorage.js"></script>
+
+<script src="js/login.js"></script>
+
+</body>
+
+</html>

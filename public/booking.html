@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Booking | TravelX</title>
+
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/201/201623.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/animation.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/booking.css">
+<link rel="stylesheet" href="css/extras.css">
+
+</head>
+
+<body>
+
+<!--============== LOADER ==============-->
+<div class="loader">
+<div class="loader-box">
+<i class="fa-solid fa-plane"></i>
+<h2>TravelX</h2>
+</div>
+</div>
+
+<!--============== HEADER ==============-->
+<header>
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+<img src="https://cdn-icons-png.flaticon.com/512/201/201623.png" alt="TravelX Logo">
+<span>TravelX</span>
+</a>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="packages.html">Packages</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="booking.html" class="active">Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="nav-right">
+<a href="login.html" class="login-btn">Login</a>
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
+</div>
+
+</nav>
+</header>
+
+<!--============== BOOKING HERO ==============-->
+
+<section class="booking-hero">
+
+<div class="booking-overlay"></div>
+
+
+<div class="booking-content">
+
+<p>
+Start Your Journey
+</p>
+
+
+<h1>
+Book Your Dream Vacation
+</h1>
+
+
+<span>
+
+Home
+
+<i class="fa-solid fa-angle-right"></i>
+
+Booking
+
+</span>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!--============== BOOKING SECTION ==============-->
+
+
+<section class="booking-page">
+
+
+<div class="section-title">
+
+
+<p>
+Reservation
+</p>
+
+
+<h2>
+Complete Your Booking
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="booking-container">
+
+
+
+<!--============== FORM ==============-->
+
+
+<form id="bookingForm" class="booking-form" novalidate>
+
+
+
+<h3>
+Traveller Information
+</h3>
+
+<div class="form-alert" id="bookingAlert" role="alert" hidden></div>
+
+
+
+
+<div class="input-group">
+
+
+<div class="input-box">
+
+
+<label>
+Full Name
+</label>
+
+
+<input 
+type="text"
+id="userName"
+placeholder="Enter your name"
+autocomplete="name"
+required>
+
+
+</div>
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+Email Address
+</label>
+
+
+<input 
+type="email"
+id="userEmail"
+placeholder="Enter your email"
+autocomplete="email"
+required>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="input-group">
+
+
+<div class="input-box">
+
+
+<label>
+Phone Number
+</label>
+
+
+<input 
+type="tel"
+id="userPhone"
+placeholder="10-digit mobile number"
+inputmode="numeric"
+maxlength="10"
+autocomplete="tel"
+required>
+
+
+</div>
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+Destination
+</label>
+
+
+<select id="destinationSelect" required>
+
+
+<option value="">
+Select Destination
+</option>
+
+
+<option>
+Maldives
+</option>
+
+
+<option>
+Switzerland
+</option>
+
+
+<option>
+Bali
+</option>
+
+
+<option>
+Dubai
+</option>
+
+
+<option>
+Goa
+</option>
+
+
+<option>
+Paris
+</option>
+
+
+<option>
+London
+</option>
+
+
+</select>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!--============== TRAVEL DETAILS ==============-->
+
+
+<div class="input-group">
+
+
+<div class="input-box">
+
+
+<label>
+Travel Date
+</label>
+
+
+<input 
+type="date"
+id="travelDate"
+required>
+
+
+</div>
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+Number of Travellers
+</label>
+
+
+<input 
+type="number"
+id="travellers"
+placeholder="Number of people"
+min="1"
+max="20"
+required>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-group">
+
+
+<div class="input-box">
+
+
+<label>
+Select Package
+</label>
+
+
+<select id="packageSelect" required>
+
+
+<option value="">
+Choose Package
+</option>
+
+
+<option>
+Maldives Escape
+</option>
+
+
+<option>
+Swiss Adventure
+</option>
+
+
+<option>
+Paris Explorer
+</option>
+
+
+<option>
+Bali Honeymoon
+</option>
+
+
+<option>
+Dubai Luxury
+</option>
+
+
+<option>
+Goa Beach Tour
+</option>
+
+
+</select>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="input-box">
+
+
+<label>
+Travel Type
+</label>
+
+
+<select id="travelType">
+
+
+<option>
+Family Trip
+</option>
+
+
+<option>
+Honeymoon
+</option>
+
+
+<option>
+Adventure
+</option>
+
+
+<option>
+Solo Travel
+</option>
+
+
+<option>
+Business Trip
+</option>
+
+
+</select>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!--============== SPECIAL REQUEST ==============-->
+
+
+<div class="input-full">
+
+
+<label>
+Special Request
+</label>
+
+
+<textarea
+
+id="message"
+
+rows="5"
+
+placeholder="Write your requirements..."></textarea>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="price-estimate" id="priceEstimate" hidden></div>
+
+<button type="submit" class="btn primary-btn booking-btn">
+
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Confirm Booking
+
+
+</button>
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+<!--============== BOOKING INFO CARD ==============-->
+
+
+<div class="booking-info-card">
+
+
+
+<div class="info-icon">
+
+<i class="fa-solid fa-headset"></i>
+
+</div>
+
+
+
+
+
+<h3>
+Need Help?
+</h3>
+
+
+
+
+
+<p>
+
+Our travel experts are available 24/7 to help you
+plan your perfect holiday.
+
+</p>
+
+
+
+
+
+<div class="contact-detail">
+
+
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
++91 98765 43210
+
+</p>
+
+
+
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+info@travelx.com
+
+</p>
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="booking-feature">
+
+
+<div>
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<p>
+Secure Booking
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<i class="fa-solid fa-wallet"></i>
+
+<p>
+Best Price
+</p>
+
+</div>
+
+
+
+
+<div>
+
+<i class="fa-solid fa-clock"></i>
+
+<p>
+24/7 Support
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+<!--============== MY BOOKINGS (shown only when logged in) ==============-->
+<section class="my-bookings" id="myBookings" hidden>
+<div class="section-title">
+<p>Your Account</p>
+<h2>My Bookings</h2>
+</div>
+<div class="my-bookings-list" id="myBookingsList"></div>
+</section>
+
+<!--============== SUCCESS POPUP ==============-->
+
+
+<div class="booking-popup">
+
+
+<div class="popup-box">
+
+
+<i class="fa-solid fa-circle-check"></i>
+
+
+<h2>
+Booking Request Received!
+</h2>
+
+
+<p>
+Your booking request has been saved.
+</p>
+<p class="popup-ref" id="bookingRef">
+</p>
+
+
+<button class="close-popup">
+
+Close
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!--============== FOOTER ==============-->
+
+
+<footer>
+
+
+<div class="footer-container">
+
+
+
+<div class="footer-box">
+
+
+<h2>
+TravelX
+</h2>
+
+
+<p>
+
+Your trusted travel partner for exploring amazing destinations
+around the world with comfort and safety.
+
+</p>
+
+
+
+
+<div class="social-icons">
+
+
+<a href="#">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fab fa-x-twitter"></i>
+
+</a>
+
+
+
+<a href="#">
+
+<i class="fab fa-youtube"></i>
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-box">
+
+
+<h3>
+Quick Links
+</h3>
+
+
+
+<a href="index.html">
+Home
+</a>
+
+
+<a href="about.html">
+About
+</a>
+
+
+<a href="destinations.html">
+Destinations
+</a>
+
+
+<a href="packages.html">
+Packages
+</a>
+
+
+<a href="gallery.html">
+Gallery
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-box">
+
+
+<h3>
+Services
+</h3>
+
+
+
+<a href="booking.html">
+Tour Booking
+</a>
+
+
+
+<a href="#">
+Hotel Booking
+</a>
+
+
+
+<a href="#">
+Flight Booking
+</a>
+
+
+
+<a href="#">
+Travel Guide
+</a>
+
+
+
+<a href="contact.html">
+Customer Support
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-box">
+
+
+<h3>
+Contact
+</h3>
+
+
+
+
+<p>
+
+<i class="fa-solid fa-location-dot"></i>
+
+New Delhi, India
+
+</p>
+
+
+
+
+<p>
+
+<i class="fa-solid fa-phone"></i>
+
++91 98765 43210
+
+</p>
+
+
+
+
+<p>
+
+<i class="fa-solid fa-envelope"></i>
+
+info@travelx.com
+
+</p>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-bottom">
+
+
+<p>
+
+© <span class="year"></span> TravelX. All Rights Reserved.
+
+</p>
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+<!--============== JAVASCRIPT ==============-->
+
+
+<script src="js/api.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/localstorage.js"></script>
+
+<script src="js/booking.js"></script>
+
+
+
+
+</body>
+
+</html>

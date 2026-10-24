@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Packages | TravelX</title>
+
+<!-- Favicon -->
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/201/201623.png">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/package.css">
+
+<link rel="stylesheet" href="css/extras.css">
+
+</head>
+
+<body>
+
+<!--================ LOADER ================-->
+
+<div class="loader">
+    <div class="loader-box">
+        <i class="fa-solid fa-plane"></i>
+        <h2>TravelX</h2>
+    </div>
+</div>
+
+<!--================ HEADER ================-->
+
+<header>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<img
+src="https://cdn-icons-png.flaticon.com/512/201/201623.png"
+alt="TravelX Logo">
+
+<span>TravelX</span>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="destinations.html">Destinations</a></li>
+<li><a href="packages.html" class="active">Packages</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="booking.html">Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<a href="login.html" class="login-btn">
+Login
+</a>
+
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--================ HERO ================-->
+
+<section class="package-hero">
+
+<div class="package-overlay"></div>
+
+<div class="package-content">
+
+<p>Best Holiday Deals</p>
+
+<h1>Choose Your Perfect Tour Package</h1>
+
+<span>
+
+Home
+
+<i class="fa-solid fa-angle-right"></i>
+
+Packages
+
+</span>
+
+</div>
+
+</section>
+
+<!--================ FILTER ================-->
+
+<section class="package-filter">
+
+<div class="filter-box">
+
+<input
+type="text"
+id="packageSearch"
+placeholder="Search package...">
+
+<select id="packageCategory">
+
+<option value="all">All Packages</option>
+<option value="beach">Beach</option>
+<option value="mountain">Mountain</option>
+<option value="city">City</option>
+<option value="honeymoon">Honeymoon</option>
+
+</select>
+
+</div>
+
+</section>
+
+<!--================ PACKAGES ================-->
+
+<section class="packages-page">
+
+<div class="section-title">
+
+<p>Popular Tours</p>
+
+<h2>Our Best Packages</h2>
+
+</div>
+
+<div class="package-grid">
+
+<!-- PACKAGE 1 STARTS HERE -->
+ <!--================ PACKAGE 1 ================-->
+
+<div class="package-card" data-category="beach">
+
+<div class="offer-tag">20% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=900&auto=format&fit=crop&q=80"
+alt="Maldives">
+
+<div class="package-info">
+
+<h3>Maldives Escape</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Maldives
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+5 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.9
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹59,999</h4>
+
+<a href="booking.html?package=Maldives%20Escape" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PACKAGE 2 ================-->
+
+<div class="package-card" data-category="mountain">
+
+<div class="offer-tag">15% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=900&auto=format&fit=crop&q=80"
+alt="Switzerland">
+
+<div class="package-info">
+
+<h3>Swiss Adventure</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Switzerland
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+7 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+5.0
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹89,999</h4>
+
+<a href="booking.html?package=Swiss%20Adventure" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PACKAGE 3 ================-->
+
+<div class="package-card" data-category="city">
+
+<div class="offer-tag">25% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=900&auto=format&fit=crop&q=80"
+alt="Paris">
+
+<div class="package-info">
+
+<h3>Paris Explorer</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+France
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+6 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.8
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹74,999</h4>
+
+<a href="booking.html?package=Paris%20Explorer" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PACKAGE 4 ================-->
+
+<div class="package-card" data-category="honeymoon">
+
+<div class="offer-tag">30% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=900&auto=format&fit=crop&q=80"
+alt="Bali">
+
+<div class="package-info">
+
+<h3>Bali Honeymoon</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Indonesia
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+6 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.9
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹69,999</h4>
+
+<a href="booking.html?package=Bali%20Honeymoon" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PACKAGE 5 STARTS HERE -->
+ <!--================ PACKAGE 5 ================-->
+
+<div class="package-card" data-category="beach">
+
+<div class="offer-tag">18% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=900&auto=format&fit=crop&q=80"
+alt="Goa">
+
+<div class="package-info">
+
+<h3>Goa Beach Tour</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+India
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+4 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.7
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹19,999</h4>
+
+<a href="booking.html?package=Goa%20Beach%20Tour" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PACKAGE 6 ================-->
+
+<div class="package-card" data-category="city">
+
+<div class="offer-tag">22% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=900&auto=format&fit=crop&q=80"
+alt="Dubai">
+
+<div class="package-info">
+
+<h3>Dubai Luxury</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+UAE
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+5 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.8
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹54,999</h4>
+
+<a href="booking.html?package=Dubai%20Luxury" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PACKAGE 7 ================-->
+
+<div class="package-card" data-category="city">
+
+<div class="offer-tag">20% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&auto=format&fit=crop&q=80"
+alt="London">
+
+<div class="package-info">
+
+<h3>London Highlights</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+United Kingdom
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+7 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.8
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹84,999</h4>
+
+<a href="booking.html?package=London%20Highlights" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PACKAGE 8 ================-->
+
+<div class="package-card" data-category="city">
+
+<div class="offer-tag">15% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=900&auto=format&fit=crop&q=80"
+alt="Singapore">
+
+<div class="package-info">
+
+<h3>Singapore Tour</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Singapore
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+5 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.9
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹57,999</h4>
+
+<a href="booking.html?package=Singapore%20Tour" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PACKAGE 9 STARTS HERE -->
+ <!--================ PACKAGE 9 ================-->
+
+<div class="package-card" data-category="city">
+
+<div class="offer-tag">18% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900&auto=format&fit=crop&q=80"
+alt="Tokyo">
+
+<div class="package-info">
+
+<h3>Tokyo Experience</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Japan
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+6 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.9
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹78,999</h4>
+
+<a href="booking.html?package=Tokyo%20Experience" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PACKAGE 10 ================-->
+
+<div class="package-card" data-category="city">
+
+<div class="offer-tag">25% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=900&auto=format&fit=crop&q=80"
+alt="New York">
+
+<div class="package-info">
+
+<h3>New York Tour</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+USA
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+7 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.8
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹94,999</h4>
+
+<a href="booking.html?package=New%20York%20Tour" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PACKAGE 11 ================-->
+
+<div class="package-card" data-category="city">
+
+<div class="offer-tag">20% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=900&auto=format&fit=crop&q=80"
+alt="Rome">
+
+<div class="package-info">
+
+<h3>Rome Heritage</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Italy
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+5 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.8
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹66,999</h4>
+
+<a href="booking.html?package=Rome%20Heritage" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!--================ PACKAGE 12 ================-->
+
+<div class="package-card" data-category="beach">
+
+<div class="offer-tag">28% OFF</div>
+
+<img
+src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&auto=format&fit=crop&q=80"
+alt="Sydney">
+
+<div class="package-info">
+
+<h3>Sydney Holiday</h3>
+
+<p>
+<i class="fa-solid fa-location-dot"></i>
+Australia
+</p>
+
+<div class="package-meta">
+
+<span>
+<i class="fa-solid fa-clock"></i>
+6 Days
+</span>
+
+<span>
+<i class="fa-solid fa-star"></i>
+4.9
+</span>
+
+</div>
+
+<div class="price-row">
+
+<h4>₹81,999</h4>
+
+<a href="booking.html?package=Sydney%20Holiday" class="btn primary-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!--============== CTA ==============-->
+
+<section class="newsletter">
+
+    <div class="newsletter-content">
+
+        <h2>Plan Your Dream Vacation Today</h2>
+
+        <p>
+            Choose the package that suits your travel style and let
+            TravelX make your journey unforgettable.
+        </p>
+
+        <a href="booking.html" class="btn primary-btn">
+            Book Your Package
+        </a>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!--============== FOOTER ==============-->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+
+            <h2>TravelX</h2>
+
+            <p>
+                Discover beautiful destinations, exciting tour packages,
+                and unforgettable travel experiences with TravelX.
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-box">
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="destinations.html">Destinations</a>
+
+            <a href="packages.html">Packages</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="booking.html">Booking</a>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+
+        <div class="footer-box">
+
+            <h3>Services</h3>
+
+            <a href="booking.html">Online Booking</a>
+
+            <a href="#">Hotel Reservation</a>
+
+            <a href="#">Flight Booking</a>
+
+            <a href="#">Tour Guide</a>
+
+            <a href="contact.html">Support</a>
+
+        </div>
+
+
+
+        <div class="footer-box">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                New Delhi, India
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 98765 43210
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                info@travelx.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © <span class="year"></span> TravelX. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+<!--============== JAVASCRIPT ==============-->
+
+<script src="js/api.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/localstorage.js"></script>
+
+<script src="js/package.js"></script>
+
+</body>
+
+</html>
